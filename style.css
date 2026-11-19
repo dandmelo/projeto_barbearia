@@ -1,0 +1,302 @@
+/*
+Proposta Visual - Barbearia Novo Visual
+
+Fundo escuro (preto e grafite).
+Detalhes dourados.
+Textos brancos e cinza-claro.
+Visual moderno, elegante e masculino.
+
+#171717
+#252525
+#C49A52
+#F5F5F5
+#C99B54
+
+/* Configurações gerais da página*/
+body
+{
+    background-color: #171717;
+    color: #F5F5F5;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Cabeçalho */
+header
+{
+    background-color: #252525;
+    padding: 20px 40px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Titulo Principal - Nome da Barbearia */
+h1
+{
+    color: #C99B54;
+    font-size: 30px;
+    margin: 0;    
+}
+
+
+/* Símbolo da logo */
+.simbolo {
+    color: #C99B54;
+    margin-right: 8px;
+}
+
+/* Destaque da palavra Novo */
+.destaque {
+    color: #FFFFFF;
+}
+
+/* Subtítulo */
+header h2
+{
+    color: #C99B54;
+    font-size: 22px;
+    margin: 0;
+}
+
+nav a
+{   color: #F5F5F5;
+    text-decoration: none; /* tira o sublinhado */
+    margin-left: 20px;
+}
+
+/* Efeito ao passar o mouse*/
+nav a:hover
+{
+    color: #C49A52;
+}
+
+.botao-menu {
+    background-color: #C99B54;
+    color: #111111;
+    padding: 12px 18px;
+    border-radius: 8px;
+    font-weight: 600;
+    margin: 5px, 0;
+}
+
+.botao-menu:hover {
+    background-color: #E0B66F;
+    color: #111111;
+}
+
+
+/* Banner principal */
+.banner {
+    background-image: url("barbearia.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    text-align: center;
+    padding: 120px 20px;
+    color: #FFFFFF;
+}
+
+/* Título do banner */
+.banner h2 {
+    font-size: 38px;
+    margin-bottom: 20px;
+}
+
+/* Texto do banner */
+.banner p {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+/* Botão serviços - Bootstrap */
+.botao-servicos {
+    background-color: #C49A52;
+    color: #171717;
+    border: none;
+    padding: 14px 28px;
+    border-radius: 20px;
+    font-weight: bold;
+}
+
+.botao-servicos:hover {
+    background-color: #E0B66F;
+    color: #171717;
+}
+
+/* Efeito do botão */
+.botao-servicos:hover {
+    background-color: #E0B96F;
+}
+
+/* Botão agendamento */
+.botao-agendamento {
+    display: inline-block;
+    background-color: #252525;
+    color: #C99B54;
+    text-decoration: none;
+    padding: 14px 28px;
+    border: 1px solid #C99B54;
+    border-radius: 20px;
+    font-weight: bold;
+    margin-top: 12px;
+}
+
+.botao-agendamento:hover {
+    background-color: #C49A52;
+    color: #171717;
+}
+
+
+/* Seções de conteúdo */
+#sobre, #servicos, #profissionais {
+    padding: 10px;
+}
+
+
+/* Títulos das seções */
+#sobre h2, #servicos h2, #profissionais h2 {
+    color: #C99B54;
+    font-size: 26px;
+}
+
+
+/* Texto institucional */
+#sobre p {
+    font-size: 16px;
+    line-height: 1.6;
+    text-align: justify;
+}
+
+
+/* Organização dos cartões / alinhamento*/
+.lista-servicos {
+    display: flex;
+    gap: 20px;
+}
+
+/* Cartão individual - Serviços */
+.servico {
+    background-color: #252525;
+    padding: 25px;
+    border-radius: 8px;
+    flex: 1;
+}
+
+/* Nome do serviço */
+.servico h3 {
+    color: #C49A52;
+}
+
+/* Preço */
+.preco {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* Imagens dos serviços */
+.servico img {
+    width: 50%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 6px;
+}
+
+
+/* Seção de profissionais */
+#profissionais {
+    padding: 20px;
+}
+
+/* Organização dos cartões */
+.lista-profissionais {
+    display: flex;
+    gap: 20px;
+}
+
+/* Cartão individual */
+.profissional {
+    background-color: #252525;
+    padding: 20px;
+    border-radius: 8px;
+    flex: 1;
+    text-align: center;
+}
+
+/* Fotografia */
+.profissional img {
+    width: 280px;
+    height: 350px;
+    object-fit: cover; /* preenche o espaço sem distorce*/
+    border-radius: 50%;
+       
+}
+
+/* Nome do profissional */
+.profissional h3 {
+    color: #C49A52;
+}
+
+
+
+/* Seção de contato */
+#contato {
+    background-color: #252525;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Informações de contato */
+.informacoes-contato {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 0;
+}
+
+/* Títulos das informações */
+.informacoes-contato h3 {
+    color: #C49A52;
+}
+
+
+
+/* Rodapé */
+footer {
+    background-color: #171717;
+    color: #F5F5F5;
+    text-align: center;
+    padding: 15px;
+    font-size: 14px;
+}
+
+
+/* RESPONSIVIDADE */
+/* Ajustes para telas de celular */
+@media (max-width: 600px) {
+    header {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .lista-servicos,
+    .lista-profissionais {
+        flex-direction: column;
+    }
+
+    .informacoes-contato {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    margin-left: 0;
+    }
+    
+}
